@@ -1,6 +1,7 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   return (
@@ -10,14 +11,14 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="#">About</Nav.Link>
-            <Nav.Link href="#">Services</Nav.Link>
-            <Nav.Link href="#">Contact</Nav.Link>
+            <Nav.Link href="#"><Link to="/" className="nav-link">Home</Link></Nav.Link>
+            <Nav.Link href="#"><Link to="/about" className="nav-link">About</Link></Nav.Link>
+            <Nav.Link href="#"><Link to="/services" className="nav-link">Services</Link></Nav.Link>
+            <Nav.Link href="#"><Link to="/contact" className="nav-link">Contact</Link></Nav.Link>
           </Nav>
           <Nav className="ml-auto auth-links">
-            <Nav.Link href="#">Sign In</Nav.Link>
-            <Nav.Link href="#" className="sign-up-btn">Sign Up</Nav.Link>
+            <Nav.Link href="#"><Link to="/signin" className="nav-link">Sign In</Link></Nav.Link>
+            <Nav.Link href="#" className="sign-up-btn"><Link to="/signup" className="nav-link">Sign Up</Link></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
