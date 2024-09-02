@@ -5,6 +5,7 @@ import Services from "../pages/Services";
 import Contact from "../pages/Contact";
 import Signup from "../pages/Signup";
 import SignIn from "../pages/Signin";
+import Payment from "../pages/Payment";
 
 
 export const routes = createBrowserRouter([
@@ -31,5 +32,9 @@ export const routes = createBrowserRouter([
     {
         path: "/signin",
         element: <SignIn/>
+    },
+    {
+        path: "/payment",
+        element: <Payment/>
     }
 ])
