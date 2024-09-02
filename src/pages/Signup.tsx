@@ -93,6 +93,8 @@ const SignUp: React.FC = () => {
 
   const handleSubmit = (values: TrainerType) => {
     console.log('Form Submitted:', values);
+    window.location.href = '/signin';
+
   };
 
   return (

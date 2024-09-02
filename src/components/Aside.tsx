@@ -1,6 +1,7 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css';
+import { Link } from 'react-router-dom';
 
 const Aside = () => {
   return (
@@ -51,13 +52,11 @@ const Aside = () => {
             <Card className="aside-card">
               <Card.Body>
                 <ul className="quick-links">
-                  <li><a href="#">Client Dashboard</a></li>
-                  <li><a href="#">Training Resources</a></li>
-                  <li><a href="#">Pricing Plans</a></li>
-                  <li><a href="#">Support</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">FAQs</a></li>
-                  <li><a href="#">Terms & Conditions</a></li>
+                <Link to="/trainingresources"><li><a href="#">Training Resources</a></li></Link>
+                  <Link to="/support"><li><a href="#">Support</a></li></Link>
+                  <Link to="/contact"><li><a href="#">Contact Us</a></li></Link>
+                  <Link to="/faqs"><li><a href="#">FAQs</a></li></Link>
+                  <Link to="/term"><li><a href="#">Terms & Conditions</a></li></Link>
                 </ul>
               </Card.Body>
             </Card>

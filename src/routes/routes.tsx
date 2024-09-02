@@ -6,6 +6,10 @@ import Contact from "../pages/Contact";
 import Signup from "../pages/Signup";
 import SignIn from "../pages/Signin";
 import Payment from "../pages/Payment";
+import FAQs from "../pages/FAQs";
+import Support from "../pages/Support";
+import TermsAndConditions from "../pages/TermsAndConditions";
+import TrainingResources from "../pages/TrainingResources";
 
 
 export const routes = createBrowserRouter([
@@ -36,5 +40,21 @@ export const routes = createBrowserRouter([
     {
         path: "/payment",
         element: <Payment/>
+    },
+    {
+        path: "/faqs",
+        element: <FAQs/>
+    },
+    {
+        path: "/support",
+        element: <Support/>
+    },
+    {
+        path: "/term",
+        element: <TermsAndConditions/>
+    },
+    {
+        path: "/trainingresources",
+        element: <TrainingResources/>
     }
 ])
